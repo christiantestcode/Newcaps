@@ -19,6 +19,7 @@ import CounselingRec from './GcConfig/CounselingRec';
 import PacmanLoader from "react-spinners/PacmanLoader"
 import './Dashboard.css'
 
+export const blink = `https://back-end-oeg6.onrender.com`;
 
 export default function Dashboard() {
 
