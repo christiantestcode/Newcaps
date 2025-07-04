@@ -18,6 +18,8 @@ import { PiNewspaperClippingFill } from "react-icons/pi";
 import { BsFillCalendarRangeFill } from "react-icons/bs";
 import Four from './four';
 
+export const blink = `https://back-end-oeg6.onrender.com`;
+
 export default function Navs() {
 
   const navLinkStyles = ({isActive}) =>{
@@ -41,7 +43,7 @@ export default function Navs() {
 
     const getNtotification = async ()=>{
       try{ 
-          const response= await Axios.get(`http://localhost:3500/notification/${'icon'}`)
+          const response= await Axios.get(`${blink}/notification/${'icon'}`)
           if(response.data === '404 Not Found') { 
                   console.log(' no notification')
           }
