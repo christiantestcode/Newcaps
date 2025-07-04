@@ -1,0 +1,69 @@
+/* front page */
+
+.textS{
+    text-shadow: 1px 1px 1px #000000;
+}
+.textSb{
+    text-shadow: 1px 1px 1px #ffffff;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: -0px 5px 2px 0 rgba(0, 0, 0, 0.37);
+    animation: referralBTN 4s linear alternate infinite;
+    background-size: 500px;
+    background-position-x: 200px;
+  }
+  .glass:active{
+    box-shadow: -0px 1px 2px 0 rgba(0, 0, 0, 0.37);
+  }
+  @keyframes referralBTN {
+    from{
+      background-position-x: 0;
+    }
+    to{
+      background-position-x: 500px;
+    }
+  }
+
+
+
+
+
+
+  /* LOGIN */
+.bg{
+    background-image: url('images/Login/loginBG2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .glass-cardS{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+  }
+
+
+/* FONTS */
+
+/* FONT */
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* FONT */
+
+
