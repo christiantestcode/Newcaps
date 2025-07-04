@@ -39,7 +39,7 @@ export default function Dashboard() {
 
         const getCounselingRec = async ()=>{
                 try{
-                    const response= await Axios.get(`http://localhost:3500/forDasboard`)
+                    const response= await Axios.get(`${blink}/forDasboard`)
 
                         const one = (response.data.pis.filter((value)=> value.statusComp === "complete").length)
                         // (response.data.tocounsel.filter((value)=>  ((value.eventName === "Appointment") || (value.eventName === "Counselling") || (value.eventName === "Referral") && (value.setDate > todayD)) ))
@@ -70,7 +70,7 @@ export default function Dashboard() {
 
         const getEvents = async () =>{
                         try{
-                        const response= await Axios.get(`http://localhost:3500/getEvents/${todayD}`)
+                        const response= await Axios.get(`${blink}/getEvents/${todayD}`)
 
                                 setEvents(response.data.filter((item)=> item.status != 'canceled'))
                                 sethaveEvents(response.data.filter((item)=> item.status != 'canceled')[0]? true:false)
