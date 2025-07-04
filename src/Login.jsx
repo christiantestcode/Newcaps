@@ -9,6 +9,8 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 import { AiFillEye,AiFillEyeInvisible } from "react-icons/ai";
 import useStore from './Store/store';
 
+export const blink = `https://newback-79yn.onrender.com`;
+
 export default function Login() {
 
   
@@ -54,7 +56,7 @@ export default function Login() {
       setloading(true)
 
         try{
-          const response= await Axios.get(`http://localhost:3600/login/${user}/${pwd}`)
+          const response= await Axios.get(`${blink}/login/${user}/${pwd}`)
                 
                 setTimeout(()=>{
                   setloading(false)
