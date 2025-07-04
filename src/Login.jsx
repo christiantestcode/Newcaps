@@ -9,7 +9,7 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 import { AiFillEye,AiFillEyeInvisible } from "react-icons/ai";
 import useStore from './Store/store';
 
-export const blink = `https://newback-79yn.onrender.com`;
+export const blink = `https://newback-vlpc.onrender.com`;
 
 export default function Login() {
 
